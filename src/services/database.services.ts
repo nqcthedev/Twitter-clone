@@ -9,8 +9,8 @@ import Hashtag from '~/models/schemas/Hashtag.schema';
 import Bookmark from '~/models/schemas/Bookmark.schema';
 import Like from '~/models/schemas/Like.schema';
 //------------------------------------------------------------------------------------------------------
-
-const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@twiiter.3jn5msk.mongodb.net/?retryWrites=true&w=majority`;
+import { envConfig } from '~/constants/config';
+const uri = `mongodb+srv://${envConfig.dbUsername}:${envConfig.dbPassword}@twiiter.3jn5msk.mongodb.net/?retryWrites=true&w=majority`;
 
 class DatabaseService {
   private client: MongoClient;
