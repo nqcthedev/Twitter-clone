@@ -3,8 +3,10 @@ dist/
 .env.development
 .env.production
 .env.staging
+.vscode
+.env
 uploads/
 .DS_Store
-.vscode
+
 # Local Netlify folder
-.netlify
+
